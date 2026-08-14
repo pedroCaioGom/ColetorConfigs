@@ -1,2 +1,8 @@
 .env
 api/service_account.json
+wallpapers.py
+agente/build
+agente/dist
+__pycache__/
+__pycache__/
+*.spec
