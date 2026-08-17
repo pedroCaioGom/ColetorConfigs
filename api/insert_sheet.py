@@ -5,7 +5,7 @@ import os
 
 load_dotenv()
 
-spreadsheet_id = os.getenv('spreadsheet_id')
+spreadsheet_id = "1Nau6hVRhjeF1dqI_vMeWk8FoJDgF78tsdTCTH8ykVs8"
 
 api = ApiGoogle(
     service_account_file="service_account.json",
