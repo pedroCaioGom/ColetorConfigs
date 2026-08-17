@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from api.insert_sheet import insert, search
+from insert_sheet import insert, search
 
 app = Flask(__name__)
 
