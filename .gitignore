@@ -1,8 +1,18 @@
+# Ambiente virtual
+.venv/
+
+# Variáveis de ambiente e credenciais
 .env
 api/service_account.json
-wallpapers.py
-agente/build
-agente/dist
+
+# Cache do Python
 __pycache__/
-__pycache__/
+*.pyc
+
+# PyInstaller
 *.spec
+agente/build/
+agente/dist/
+
+# Arquivos específicos
+wallpapers.py
