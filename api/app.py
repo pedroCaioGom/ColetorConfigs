@@ -9,7 +9,7 @@ load_dotenv()
 
 app = Flask(__name__)
 
-pasta_ti = os.getenv("pasta_version")
+pasta_ti = r"\\192.168.0.100\version"
 
 @app.route("/resultado", methods=["POST"])
 def receber():
