@@ -9,7 +9,7 @@ load_dotenv()
 
 app = Flask(__name__)
 
-pasta_ti = Path(__file__).parent.parent / "version"
+pasta_ti = Path(__file__).parent / "version"
 
 
 @app.route("/resultado", methods=["POST"])
