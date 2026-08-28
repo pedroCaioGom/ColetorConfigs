@@ -11,6 +11,7 @@ app = Flask(__name__)
 
 pasta_ti = Path(__file__).parent.parent / "version"
 
+
 @app.route("/resultado", methods=["POST"])
 def receber():
     dados = request.get_json()
@@ -42,7 +43,7 @@ def enviar():
 @app.route("/versao")
 def versao_server():
 
-    caminho_versao = Path(pasta_ti) / "version"
+    caminho_versao = Path(pasta_ti) / "version.txt"
 
     versao = caminho_versao.read_text().split("=")[1]
     
