@@ -33,6 +33,7 @@ def search() -> str:
         if len(row)<=1:
             print(f"Id da linha: {row[0]}")
             id_linha = row[0]
+            api.gravar_planilha(f"inventario!B{row[0]}", value_input_option="RAW", values=["-"])
             break
         i += 1
 
