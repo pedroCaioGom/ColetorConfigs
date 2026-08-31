@@ -18,7 +18,9 @@ def receber():
     print(f"Dados {dados}")
     insert(
         id_planilha=dados["id_planilha"],
+        departamento=dados["departamento"],
         email=dados["emails"],
+        senha_pc=dados["senha_pc"],
         ip=dados["ip"],
         dns=dados["dns"],
         desktop=dados["desktop"],
