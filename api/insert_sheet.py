@@ -41,7 +41,9 @@ def search() -> str:
 
 def insert(
     id_planilha,
+    departamento:str,
     email:str, 
+    senha_pc:str,
     ip: str, 
     dns: str, 
     desktop: str, 
@@ -56,12 +58,12 @@ def insert(
     i = j + 1
     
     print(f"Linha atual {i}")
-    range_name = f"inventario!C{i}:M{i}"
+    range_name = f"inventario!B{i}:M{i}"
 
     saida = api.gravar_planilha(
     range_name=range_name, 
     value_input_option="RAW",
-    values=[[email, "", ip, dns, desktop, usuario, processador, ram, disco, disco_livre, kernel]]
+    values=[[departamento, email, senha_pc, ip, dns, desktop, usuario, processador, ram, disco, disco_livre, kernel]]
     )
     print(saida)
 
